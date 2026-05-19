@@ -8,7 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* === ХЕДЪР === */
 header {
     text-align: center;
     padding: 60px 20px;
@@ -22,7 +21,6 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* вълна */
 header::after {
     content: "";
     position: absolute;
@@ -34,7 +32,6 @@ header::after {
     background-size: cover;
 }
 
-/* === ОБЩИ БАЛОНИ (DIV секции) === */
 div {
     max-width: 950px;
     margin: 50px auto;
@@ -49,12 +46,10 @@ div {
     transition: 0.4s;
 }
 
-/* hover ефект */
 div:hover {
     transform: translateY(-10px) scale(1.02);
 }
 
-/* === ПЪРВИ БАЛОН (p1 текстове) === */
 #p1 {
     font-size: 18px;
     line-height: 1.8;
@@ -67,14 +62,12 @@ div:hover {
     border-left: 6px solid #4da6ff;
 }
 
-/* първа буква */
 #p1::first-letter {
     font-size: 32px;
     font-weight: bold;
     color: #00e5ff;
 }
 
-/* === ВТОРИ БАЛОН (p4 решенията) === */
 #p4 {
     font-size: 18px;
     line-height: 1.8;
@@ -87,14 +80,12 @@ div:hover {
     border-left: 6px solid #00e5ff;
 }
 
-/* първа буква */
 #p4::first-letter {
     font-size: 32px;
     font-weight: bold;
     color: #90e0ef;
 }
 
-/* === АНИМАЦИЯ НА СЕКЦИИТЕ === */
 div {
     opacity: 0;
     transform: translateY(40px);
@@ -116,18 +107,16 @@ div:nth-of-type(2) {
     }
 }
 
-/* === РЕСПОНСИВ === */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 28px;
-    }
+.lqvo {
+    float: left;
+    width: 300px;
+    border-radius: 12px;
+    margin: 20px 20px 20px 50px;
+}
 
-    div {
-        margin: 20px;
-        padding: 18px;
-    }
-
-    #p1, #p4 {
-        font-size: 16px;
-    }
+.dqsno {
+    float: right;
+    width: 300px;
+    border-radius: 12px;
+    margin: 20px 50px 20px 20px;
 }
