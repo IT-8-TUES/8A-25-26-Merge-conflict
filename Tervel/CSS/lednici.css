@@ -133,3 +133,28 @@ div:nth-of-type(2) {
     border-radius: 12px;
     margin: 20px 50px 20px 20px;
 }
+
+.btn-vruzka {
+    display: block;
+    margin: 30px auto;
+    padding: 20px 80px;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.4s;
+    letter-spacing: 2px;
+    width: fit-content;
+}
+
+.btn-vruzka:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+    border:none;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
