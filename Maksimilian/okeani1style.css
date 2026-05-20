@@ -18,9 +18,13 @@ h1 {
     letter-spacing: 2px;
 }
 
-h2 {
+p {
     text-align: center;
-    font-size: 28px;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 /* === ГАЛЕРИЯ === */
@@ -28,14 +32,14 @@ h2 {
 .gallery {
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
-    gap: 20px;
+    gap: 25px;
 
     padding: 30px;
 }
 
-/* === CARD === */
+/* === КАРТИЧКИ === */
 
 .card {
     background: rgba(255, 255, 255, 0.15);
@@ -55,76 +59,28 @@ h2 {
     transform: translateY(-10px) scale(1.03);
 }
 
-/* images */
+/* СНИМКИ */
 
 .card img {
     width: 100%;
-    height: 180px;
+    height: 220px;
     object-fit: cover;
 }
 
-/* text */
+/* ТЕКСТ */
 
 .card h3 {
-    margin: 10px;
+    margin: 12px;
     color: #00e5ff;
 }
 
 .card p {
-    margin: 10px;
+    margin: 12px;
     line-height: 1.5;
+    font-size: 15px;
 }
 
-/* === RANKINGS === */
-
-.rankings {
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-    gap: 20px;
-
-    padding: 30px;
-}
-
-.ranking-card {
-    background: rgba(255, 255, 255, 0.12);
-
-    backdrop-filter: blur(15px);
-
-    border-radius: 15px;
-
-    overflow: hidden;
-
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-
-    transition: 0.4s;
-}
-
-.ranking-card:hover {
-    transform: translateY(-10px) scale(1.03);
-}
-
-.ranking-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.ranking-card h3 {
-    text-align: center;
-    color: #00e5ff;
-}
-
-.ranking-card ol {
-    padding: 20px;
-}
-
-.ranking-card li {
-    margin: 8px 0;
-}
-
-/* === БУТОН === */
+/* === БУТОН НАЗАД === */
 
 a {
     display: block;
@@ -160,10 +116,10 @@ a:hover {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
-    .gallery, .rankings {
+    .gallery {
         grid-template-columns: 1fr;
     }
 }
