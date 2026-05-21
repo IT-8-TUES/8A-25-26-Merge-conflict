@@ -19,6 +19,14 @@ header {
     position: relative;
 
     background: linear-gradient(to right, #023e8a, #0077b6);
+    
+    display: flex;
+
+    align-items: center;
+    
+    padding: 20px 40px;
+    
+    background: linear-gradient(to right, #023e8a, #0077b6);
 }
 
 header h1 {
@@ -27,6 +35,14 @@ header h1 {
     margin: 0;
 
     letter-spacing: 2px;
+
+    font-size: 32px;
+
+    margin: 0;
+
+    letter-spacing: 2px;
+
+    margin-right: auto;
 }
 
 header::after {
@@ -154,4 +170,32 @@ button {
 
 button:hover {
     background: #0077b6;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    padding: 10px 20px;
+
+    border-radius: 12px;
+
+    transition: 0.4s;
+
+    position: relative;
+
+    z-index: 999;
+
+    pointer-events: auto;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+
+    transform: translateY(-3px);
 }

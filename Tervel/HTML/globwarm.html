@@ -5,7 +5,16 @@
     <title>Глобалното затопляне</title>
 </head>
 <body>
-    <header><h1><b>Световното глобалното затопляне</b></h1> </header>
+
+    <header>
+        <h1><b>Световното глобалното затопляне</b></h1>
+    <nav> 
+        <a href="/Maksimilian/okeani1.html">Океаните</a>
+        <a href="/Maksimilian/okeani2.html">Редки животни</a>   
+        <a href="../HTML/lednici.html">Ледници</a>
+    </nav>
+    </header>
+
     <img src="../Snimki/snimka6.jpg" class="lqvo" onclick="otvorisnimka(this)">
     <div>    
         <p id="p1">
@@ -67,9 +76,6 @@
    пестене на ресурси и избор на по-екологичен начин на живот.
  </p>
     </div>
-    <a href="../HTML/lednici.html">
-    <button class="btn-vruzka">Ако те интересуват ледниците</button>
-    </a>
     <section id="modal" onclick="zatvorimodal()">
         <button id="butonnazad" onclick="smeni(event, -1)">&#8592;</button>
         <img id="golqmasnimka" onclick="event.stopPropagation()">
@@ -77,6 +83,6 @@
         <button id="zatvori" onclick="zatvorimodal()">&#10005</button>
 </section>
     <button class="btn-nagore" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&#8679;</button>
-<script src="../JavaScript/globalwarm.js"></script>
+
 </body>
 </html>
