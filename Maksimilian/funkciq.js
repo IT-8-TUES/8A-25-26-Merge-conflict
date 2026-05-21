@@ -1,6 +1,4 @@
-// =========================
-// DARK MODE
-// =========================
+
 
 function darkMode() {
 
@@ -21,9 +19,6 @@ function darkMode() {
     header.style.background = "#000814";
 }
 
-// =========================
-// LIGHT MODE
-// =========================
 
 function lightMode() {
 
