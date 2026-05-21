@@ -5,8 +5,8 @@
     <title>Глобалното затопляне</title>
 </head>
 <body>
-    <header><h1><b>Световното глобалното затопляне<b></b></h1> </header>
-    <img src="../Snimki/snimka6.jpg" class="lqvo">
+    <header><h1><b>Световното глобалното затопляне</b></h1> </header>
+    <img src="../Snimki/snimka6.jpg" class="lqvo" onclick="otvorisnimka(this)">
     <div>    
         <p id="p1">
     Световното глобалното затопляне е едно от най-сериозните съвременни предизвикателства, 
@@ -16,7 +16,7 @@
     и водят до промени в климата на планетата.
  </p>
     </div>
-    <img src="../Snimki/snimka7.jpg" class="dqsno">
+    <img src="../Snimki/snimka7.jpg" class="dqsno" onclick="otvorisnimka(this)">
     <div>
         <p id="p1">
     Основните причини за глобалното затопляне са свързани с човешката 
@@ -26,7 +26,7 @@
     явления и промени в екосистемите.
  </p>
     </div>
-    <img src="../Snimki/snimka8.jpg" class="lqvo">
+    <img src="../Snimki/snimka8.jpg" class="lqvo" onclick="otvorisnimka(this)">
     <div>
         <p id="p1">
     Последиците от глобалното затопляне са все по-осезаеми. Освен топенето на 
@@ -37,7 +37,7 @@
  </p>
     </div>
     <br>
-    <img src="../Snimki/snimka9.jpg" class="dqsno">
+    <img src="../Snimki/snimka9.jpg" class="dqsno" onclick="otvorisnimka(this)">
     <div>
         <p id="p4">
    За ограничаване на глобалното затопляне са необходими спешни и съвместни 
@@ -47,7 +47,7 @@
    намалява замърсяването на атмосферата и забавя климатичните промени.
  </p>
     </div>
-    <img src="../Snimki/snimka10.jpg" class="lqvo">
+    <img src="../Snimki/snimka10.jpg" class="lqvo" onclick="otvorisnimka(this)">
     <div>
         <p id="p4">
    Друг важен подход е повишаването на енергийната ефективност в индустрията, 
@@ -57,8 +57,8 @@
    тъй като дърветата поглъщат въглероден диоксид и подобряват качеството на въздуха.
  </p>
     </div>
-    <img src="../Snimki/snimka11.jpg" class="dqsno">
-    <img src="../Snimki/snimka12.jpg" class="lqvo">
+    <img src="../Snimki/snimka11.jpg" class="dqsno" onclick="otvorisnimka(this)">
+    <img src="../Snimki/snimka12.jpg" class="lqvo" onclick="otvorisnimka(this)">
     <div>
         <p id="p4">
    Международното сътрудничество също е много важно. Държавите трябва да спазват климатичните 
@@ -67,9 +67,16 @@
    пестене на ресурси и избор на по-екологичен начин на живот.
  </p>
     </div>
-    <script src="../JavaScript/globalwarm.js"></script>
-    <a href="../HTML/globwarm.html">
-    <button class="btn-vruzka">Ако те интересува ледниците</button>
+    <a href="../HTML/lednici.html">
+    <button class="btn-vruzka">Ако те интересуват ледниците</button>
     </a>
+    <section id="modal" onclick="zatvorimodal()">
+        <button id="butonnazad" onclick="smeni(event, -1)">&#8592;</button>
+        <img id="golqmasnimka" onclick="event.stopPropagation()">
+        <button id="butonnapred" onclick="smeni(event, 1)">&#8594;</button>
+        <button id="zatvori" onclick="zatvorimodal()">&#10005</button>
+</section>
+    <button class="btn-nagore" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&#8679;</button>
+<script src="../JavaScript/globalwarm.js"></script>
 </body>
 </html>
