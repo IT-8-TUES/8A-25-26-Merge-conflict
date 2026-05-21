@@ -1,5 +1,4 @@
-/* === ОСНОВА === */
-/* === ОСНОВА === */
+
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -8,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-/* === ХЕДЪР С ВЪЛНИ === */
+
 header {
     text-align: center;
     padding: 60px 20px;
@@ -22,7 +21,7 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* Вълнообразен ефект */
+
 header::after {
     content: "";
     position: absolute;
@@ -34,15 +33,14 @@ header::after {
     background-size: cover;
 }
 
-/* === СЕКЦИИ (КАРТИ) === */
 
 
-/* Hover ефект */
+
 div:hover {
     transform: translateY(-8px) scale(1.02);
 }
 
-/* === ТЕКСТ === */
+
 p {
     font-size: 18px;
     line-height: 1.8;
@@ -55,32 +53,70 @@ p {
     
 }
 
-/* първа буква */
+
 p::first-letter {
     font-size: 32px;
     font-weight: bold;
     color: #00e5ff;
 }
 
-/* === СНИМКИ === */
-img {
+
+img{
     display: block;
     margin: 30px auto;
-    max-width: 85%;
+    width: 400px;
+    height: auto;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     transition: 0.4s;
+    left: 10%;
 }
 
-/* zoom при hover */
+#img1{
+    float: left;
+}
+
+#img2{
+    float: right;
+}
+
+#img3{
+    float: left
+}
+
+#img4{
+    float:right;
+}
+
+#img5{
+    float:left;
+}
+
+#img6{
+    float:right;
+}
+
+#img7{
+    float: left;
+}
+#img8{
+    float: right;
+}
+#img9{
+    float:left
+}
+#img10{
+    float:right;
+}
+
 img:hover {
     transform: scale(1.05);
 }
 
-/* === МЯСТО ЗА СНИМКИ (ULTRA COOL) === */
+
 .image-placeholder {
-    width: 85%;
-    height: 260px;
+    width: 65%;
+    height: 20px;
     margin: 30px auto;
     border-radius: 15px;
 
@@ -95,26 +131,24 @@ img:hover {
     color: white;
     font-weight: bold;
 }
+ 
 
-/* анимирани "вълни" вътре */
 .image-placeholder::before {
     content: "";
     position: absolute;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     background: rgba(255,255,255,0.2);
     top: -50%;
     left: -50%;
-    transform: rotate(45deg);
-    animation: waveMove 6s linear infinite;
-}
+   }
 
 @keyframes waveMove {
     0% { transform: rotate(45deg) translateY(0); }
     100% { transform: rotate(45deg) translateY(100px); }
 }
 
-/* === АНИМАЦИЯ ПРИ СКРОЛ (лека) === */
+
 div {
     opacity: 0;
     transform: translateY(40px);
@@ -141,7 +175,6 @@ div:nth-child(4) {
     }
 }
 
-/* === РЕСПОНСИВ === */
 @media (max-width: 768px) {
     header h1 {
         font-size: 28px;
@@ -165,6 +198,7 @@ div:nth-child(4) {
     size: 200px;
      z-index: -1;
     pointer-events: none;
+    float: none;
     
 }
 
@@ -209,7 +243,15 @@ div:nth-child(4) {
    top: 18%; left: 72%; width: 75px; }
 .bubbles svg:nth-child(18) {
     top: 50%; left: 0%; width: 55px; }
-
+#p6{
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+   
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transition: 0.4s;
+}
 #p1{
     max-width: 950px;
     margin: 40px auto;
@@ -227,7 +269,8 @@ div:nth-child(4) {
 
     box-shadow: 0 8px 30px rgba(0,0,0,0.3);
     transition: 0.4s;
-}#p3{
+}
+#p3{
     max-width: 950px;
     margin: 40px auto;
     padding: 25px;
@@ -235,7 +278,8 @@ div:nth-child(4) {
 
     box-shadow: 0 8px 30px rgba(0,0,0,0.3);
     transition: 0.4s;
-}#p4{
+}
+#p4{
     max-width: 950px;
     margin: 40px auto;
     padding: 25px;
@@ -243,7 +287,8 @@ div:nth-child(4) {
 
     box-shadow: 0 8px 30px rgba(0,0,0,0.3);
     transition: 0.4s;
-}#p5{
+}
+#p5{
     max-width: 950px;
     margin: 40px auto;
     padding: 25px;
@@ -258,6 +303,7 @@ div:nth-child(4) {
  border: 1px solid;
  height: 50px;
  width: 50px;
- background-color: rgb(240, 4, 4);
+ background-color: rgb(4, 79, 240);
 
 }
+
