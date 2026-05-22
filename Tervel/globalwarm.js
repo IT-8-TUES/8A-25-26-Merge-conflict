@@ -29,5 +29,3 @@ function aktualiziraibutoni() {
 function zatvorimodal() {
     document.getElementById("modal").classList.remove("aktiven");
 }
-
-document.querySelector(".btn-nagore").style.display = "block";
