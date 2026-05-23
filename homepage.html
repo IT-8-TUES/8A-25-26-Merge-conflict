@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Планетата Боли — Замърсяване & Ледници</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="проект_замърсяване.CSS">
+    
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Планета<span>Боли</span></div>
+  <ul>
+    <li><a href="#ocean">Океани</a></li>
+    <li><a href="#glaciers">Ледници</a></li>
+    <li><a href="#impact">Последствия</a></li>
+    <li><a href="#act" class="nav-cta">Действай</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+
+  <!-- particles -->
+  <div class="particle" style="left:15%;top:40%;animation-delay:0s;animation-duration:7s"></div>
+  <div class="particle" style="left:25%;top:60%;animation-delay:1.2s;animation-duration:5.5s"></div>
+  <div class="particle" style="left:70%;top:50%;animation-delay:0.5s;animation-duration:8s"></div>
+  <div class="particle" style="left:82%;top:35%;animation-delay:2s;animation-duration:6s"></div>
+  <div class="particle" style="left:50%;top:70%;animation-delay:0.8s;animation-duration:7.5s"></div>
+  <div class="particle" style="left:40%;top:30%;animation-delay:3s;animation-duration:5s"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">Климатична криза · 2025</div>
+    <h1>
+      Океаните
+      <span class="line2">се задушават.</span>
+      <span class="line3">Ледниците изчезват. Времето изтича.</span>
+    </h1>
+    <p class="hero-desc">
+      Всяка минута 33 тона пластмаса навлизат в морето. Всяка година ледниците губят 390 кубични километра лед. Тази страница документира мащаба на кризата — и как можем да действаме.
+    </p>
+   
+  </div>
+
+  <div class="waves">
+    <div class="wave wave1">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" >
+        <path d="M0,60 C240,110 480,10 720,60 C960,110 1200,10 1440,60 L1440,120 L0,120 Z" fill="#0ca8f3"/>
+      </svg>
+    </div>
+    <div class="wave wave2">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,90 720,0 1080,50 C1260,75 1350,30 1440,40 L1440,120 L0,120 Z" fill="#1f2ee0"/>
+      </svg>
+    </div>
+    <div class="wave wave3">
+      <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,80 C480,20 960,100 1440,50 L1440,120 L0,120 Z" fill="#2c45d3"/>
+      </svg>
+    </div>
+  </div>
+</section> 
+
+<!-- STATS BAR -->
+<div class="stats-bar reveal">
+  <div class="stat-item">
+    <div class="stat-number">8<span class="stat-unit">М+</span></div>
+    <div class="stat-label">тона пластмаса в океана годишно</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">1.1<span class="stat-unit">°C</span></div>
+    <div class="stat-label">затопляне над доиндустриалните нива</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">390<span class="stat-unit">km³</span></div>
+    <div class="stat-label">лед изгубен всяка година</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">2050</div>
+    <div class="stat-label">година за точка на невъзврат</div>
+  </div>
+</div>
+
+<!-- OCEAN SECTION -->
+<section id="ocean">
+  <div class="ocean-section">
+    <!--<div class="ocean-visual reveal">
+      <div class="ocean-globe">
+        <svg class="globe-svg" viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="globeGrad" cx="40%" cy="35%">
+              <stop offset="0%" stop-color="#1a5f87"/>
+              <stop offset="100%" stop-color="#071e30"/>
+            </radialGradient>
+            <radialGradient id="glowGrad" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#1a8fc1" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#1a8fc1" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="globeClip">
+              <circle cx="190" cy="190" r="165"/>
+            </clipPath>
+          </defs>
+         
+          <circle cx="190" cy="190" r="185" fill="url(#glowGrad)"/>
+          
+          <circle cx="190" cy="190" r="165" fill="url(#globeGrad)" stroke="#1a8fc1" stroke-width="0.5" stroke-opacity="0.4"/>
+          
+          <g clip-path="url(#globeClip)">
+            
+            <ellipse cx="185" cy="130" rx="28" ry="40" fill="#0f4d2e" opacity="0.85"/>
+            <ellipse cx="182" cy="205" rx="22" ry="55" fill="#0f4d2e" opacity="0.85"/>
+            
+            <ellipse cx="110" cy="150" rx="20" ry="50" fill="#0f4d2e" opacity="0.85"/>
+            <ellipse cx="120" cy="240" rx="18" ry="45" fill="#0f4d2e" opacity="0.85"/>
+            
+            <ellipse cx="265" cy="130" rx="50" ry="35" fill="#0f4d2e" opacity="0.85"/>
+            <ellipse cx="290" cy="200" rx="30" ry="25" fill="#0f4d2e" opacity="0.85"/>
+           
+            <circle cx="190" cy="190" r="60" fill="none" stroke="#e84444" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.4">
+              <animateTransform attributeName="transform" type="rotate" from="0 190 190" to="360 190 190" dur="20s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="190" cy="190" r="100" fill="none" stroke="#ff6b35" stroke-width="1" stroke-dasharray="2 8" opacity="0.25">
+              <animateTransform attributeName="transform" type="rotate" from="360 190 190" to="0 190 190" dur="30s" repeatCount="indefinite"/>
+            </circle>
+           
+            <circle cx="150" cy="160" r="3" fill="#e84444" opacity="0.7"/>
+            <circle cx="230" cy="175" r="2.5" fill="#ff6b35" opacity="0.6"/>
+            <circle cx="200" cy="250" r="2" fill="#e84444" opacity="0.5"/>
+            <circle cx="140" cy="230" r="3.5" fill="#ff8c42" opacity="0.65"/>
+            <circle cx="250" cy="140" r="2" fill="#e84444" opacity="0.7"/>
+          </g>
+          
+          <ellipse cx="145" cy="140" rx="55" ry="35" fill="white" opacity="0.05"/>
+         
+          <circle cx="190" cy="190" r="165" fill="none" stroke="#1a8fc1" stroke-width="0.5" opacity="0.6"/>
+        </svg>
+      </div>
+    </div> -->
+
+    <div class="reveal">
+      <div class="section-label">Замърсяване на океаните</div>
+      <h2 class="section-title">Морето се превърна в<br><em>глобална кофа за боклук</em></h2>
+      <p class="section-body">
+        Пластмасата не изчезва — тя се раздробява на микрочастици, навлиза в хранителната верига и достига до масата ни. Близо 1 000 реки транспортират 80% от пластичните отпадъци в световните океани.
+      </p>
+
+      <div class="ocean-facts">
+        <div class="fact-row">
+          <div class="fact-icon">🐠</div>
+          <div class="fact-text">
+            <strong>700+ вида застрашени</strong>
+            <span>Морски животни поглъщат или се оплитат в пластмасови отпадъци всеки ден.</span>
+          </div>
+        </div>
+        <div class="fact-row">
+          <div class="fact-icon">🌊</div>
+          <div class="fact-text">
+            <strong>Великото тихоокеанско петно</strong>
+            <span>Плаващ остров от отпадъци с площ 3 пъти по-голяма от Франция.</span>
+          </div>
+        </div>
+        <div class="fact-row">
+          <div class="fact-icon">🧪</div>
+          <div class="fact-text">
+            <strong>Микропластмаса в нас</strong>
+            <span>Открита е в кръвта, белите дробове и плацентата на новородени.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLACIER SECTION -->
+<section id="glaciers" class="glacier-section">
+  <div class="glacier-inner">
+    <div class="reveal">
+      <div class="section-label">Топене на ледниците</div>
+      <h2 class="section-title">Вековните леденикти<br><em>агонизират</em></h2>
+      <p class="section-body">
+        От 1900 г. насам световните ледници са изгубили над 9 000 гигатона лед. Ако се стопят изцяло, морското равнище ще се вдигне с над 65 метра — заличавайки крайбрежни градове от картата.
+      </p>
+      <br><br>
+      <div class="fact-row">
+        <div class="fact-icon">🏔️</div>
+        <div class="fact-text">
+          <strong>Хималаите губят 40% от леда си</strong>
+          <span>До 2100 г. при сегашния темп на затопляне. Засяга 2 млрд. души.</span>
+        </div>
+      </div>
+      <div class="fact-row" style="margin-top: 1rem;">
+        <div class="fact-icon">📈</div>
+        <div class="fact-text">
+          <strong>Морето се вдига с 3.6 мм/год.</strong>
+          <span>Скоростта се е удвоила от 1993 г. насам и продължава да расте.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="glacier-chart reveal">
+      <div class="chart-title">Загуба на ледниково покритие</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">1900</div>
+          <div class="tl-bar-wrap">
+            <div class="tl-bar" style="width: 95%; background: #b8ddf0;"></div>
+            <div class="tl-desc">~100% от измерения ледников обем</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1950</div>
+          <div class="tl-bar-wrap">
+            <div class="tl-bar" style="width: 85%; background: #7abcd4;"></div>
+            <div class="tl-desc">Началото на индустриалното ускорение</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1980</div>
+          <div class="tl-bar-wrap">
+            <div class="tl-bar" style="width: 72%; background: #4a9eb5;"></div>
+            <div class="tl-desc">Явно ускорение на топенето</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2000</div>
+          <div class="tl-bar-wrap">
+            <div class="tl-bar" style="width: 58%; background: #ff8c42;"></div>
+            <div class="tl-desc">−390 km³/год. — рекорден темп</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2025</div>
+          <div class="tl-bar-wrap">
+            <div class="tl-bar" style="width: 42%; background: #e84444;"></div>
+            <div class="tl-desc">Критично ниво — точка на невъзврат</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2100</div>
+          <div class="tl-bar-wrap">
+            <div class="tl-bar" style="width: 18%; background: #c0392b;"></div>
+            <div class="tl-desc">Прогноза при сценарий „бизнес като обичайно"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT SECTION -->
+<section id="impact">
+  <div class="impact-section">
+    <div class="impact-header reveal">
+      <div class="section-label">Последствия за хората</div>
+      <h2 class="section-title">Числата зад<br><em>кризата</em></h2>
+    </div>
+    <div class="impact-grid reveal">
+      <div class="impact-card">
+        <div class="impact-num">2B+</div>
+        <div class="impact-label">Хора без чиста вода</div>
+        <div class="impact-detail">Топенето на ледниците застрашава питейни водоизточници за над 2 млрд. души в Азия и Латинска Америка.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">680M</div>
+        <div class="impact-label">Застрашени крайбрежни жители</div>
+        <div class="impact-detail">До 2100 г. над 680 млн. хора живеят в зони, заплашени от покачването на морето.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">50%</div>
+        <div class="impact-label">Корали унищожени</div>
+        <div class="impact-detail">Половината от световните коралови рифове са избелели или мъртви поради затопляне и закиселяване на водите.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">1M</div>
+        <div class="impact-label">Морски птици и риби</div>
+        <div class="impact-detail">Умират годишно от поглъщане на или оплитане в пластмасови отпадъци.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">40%</div>
+        <div class="impact-label">По-чести наводнения</div>
+        <div class="impact-detail">Покачването на морето увеличава честотата на катастрофалните наводнения с до 40% в уязвимите региони.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">2050</div>
+        <div class="impact-label">Непоправима граница</div>
+        <div class="impact-detail">Учените предупреждават, че ако не действаме до 2050 г., много от щетите ще станат необратими.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="logo">ПланетаБоли</div>
+ 
+  <div class="footer-copy">© 2025 ПланетаБоли. Всички права запазени.</div>
+</footer>
+
+<script>
+ 
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  
+  const tlObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bars = entry.target.querySelectorAll('.tl-bar');
+        bars.forEach((bar, i) => {
+          const target = bar.style.width;
+          bar.style.width = '0';
+          setTimeout(() => {
+            bar.style.transition = 'width 1s ease ' + (i * 0.12) + 's';
+            bar.style.width = target;
+          }, 200);
+        });
+        tlObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.timeline').forEach(el => tlObs.observe(el));
+
+ 
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    nav.style.background = window.scrollY > 50
+      ? 'rgba(6,23,40,0.97)' : 'rgba(6,23,40,0.85)';
+  });
+</script>
+</body>
+</html>
